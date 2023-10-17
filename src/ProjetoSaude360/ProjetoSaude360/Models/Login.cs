@@ -1,9 +1,8 @@
 ﻿namespace Saude360.Models
 {
-    public class Login
+    public class Login:Cadastro
     {
-        public string LoginName { get; set; }
+        public Cadastro Email { get; set; }    
         public string Password { get; set; }
-        public int id { get; set; }
     }
 }

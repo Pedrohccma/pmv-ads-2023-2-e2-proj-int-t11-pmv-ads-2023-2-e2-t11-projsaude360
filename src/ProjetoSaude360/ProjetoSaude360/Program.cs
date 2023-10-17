@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using ProjetoSaude360.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
 var app = builder.Build();
 
@@ -23,9 +31,3 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
-
-DefaultFilesOptions defaultFilesOptions = new DefaultFilesOptions();
-defaultFilesOptions.DefaultFileNames.Clear();
-defaultFilesOptions.DefaultFileNames.Add("/Home/Index.cshtml");
-app.UseDefaultFiles(defaultFilesOptions);
-app.UseStaticFiles();
