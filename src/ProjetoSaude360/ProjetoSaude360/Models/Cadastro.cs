@@ -2,13 +2,12 @@
 {
     public class Cadastro
     {
-        public int id { get; set; }
-        public string nomeUsuario { get; set; }
-        public Enums genero { get; set; }
-        public DateTime dataNascimento { get; set; }
-        public string email { get; set; }   
-        public string telefone { get; set; }
-        public string senha { get; set; }
-
+        public int Id { get; set; }
+        public string NomeUsuario { get; set; }
+        public Enums Genero { get; set; }
+        public DateTime DataNascimento { get; set; }
+        public string Email { get; set; }   
+        public string Telefone { get; set; }
+        public string Senha { get; set; }
     }
 }

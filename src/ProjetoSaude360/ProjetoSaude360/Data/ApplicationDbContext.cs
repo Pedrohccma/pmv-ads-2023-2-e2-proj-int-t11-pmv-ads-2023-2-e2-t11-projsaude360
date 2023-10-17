@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Saude360.Models;
 
 namespace ProjetoSaude360.Data
 {
@@ -9,5 +10,9 @@ namespace ProjetoSaude360.Data
         {
             
         }
+
+        public DbSet<Cadastro> Cadastros { get; set; }
+        public DbSet<Login> Logins { get; set; }
+        public DbSet<Enum> Enums { get; set; }
     }
 }
