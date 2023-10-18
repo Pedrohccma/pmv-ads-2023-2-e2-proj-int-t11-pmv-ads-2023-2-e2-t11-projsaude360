@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public string NomeUsuario { get; set; }
-        public Enums Genero { get; set; }
+        public Enums.Genero Generos { get; set; }
         public DateTime DataNascimento { get; set; }
         public string Email { get; set; }   
         public string Telefone { get; set; }
