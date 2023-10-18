@@ -24,22 +24,22 @@ namespace ProjetoSaude360.Pages.Cadastro
             return Page();
         }
 
-        [BindProperty]
-        public Cadastro Cadastros { get; set; } = default!;
+        //[BindProperty]
+        //public Cadastro Cadastros { get; set; } = default!;
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
-        public async Task<IActionResult> OnPostAsync()
-        {
-          if (!ModelState.IsValid || _context.Cadastros == null || Cadastros == null)
-            {
-                return Page();
-            }
+        //public async Task<IActionResult> OnPostAsync()
+        //{
+        //  if (!ModelState.IsValid || _context.Cadastros == null || Cadastros == null)
+        //    {
+        //        return Page();
+        //    }
 
-            _context.Cadastros.Add(Cadastros);
-            await _context.SaveChangesAsync();
+        //    _context.Cadastros.Add(Cadastros);
+        //    await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
-        }
+        //    return RedirectToPage("./Index");
+        //}
     }
 }
