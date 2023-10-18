@@ -14,14 +14,14 @@ namespace ProjetoSaude360.Pages.Cadastro
     public class EditModel : PageModel
     {
         private readonly ProjetoSaude360.Data.ApplicationDbContext _context;
+        private Saude360.Models.Cadastro Cadastro;
 
         public EditModel(ProjetoSaude360.Data.ApplicationDbContext context)
         {
             _context = context;
         }
 
-        [BindProperty]
-        public Cadastro Cadastro { get; set; } = default!;
+        
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -48,7 +48,7 @@ namespace ProjetoSaude360.Pages.Cadastro
                 return Page();
             }
 
-            _context.Attach(Cadastro).State = EntityState.Modified;
+            _context.Attach(CadastroExists).State = EntityState.Modified;
 
             try
             {

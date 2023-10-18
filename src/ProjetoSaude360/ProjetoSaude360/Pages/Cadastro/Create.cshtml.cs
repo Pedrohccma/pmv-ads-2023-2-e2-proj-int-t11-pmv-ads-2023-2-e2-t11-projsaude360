@@ -25,18 +25,18 @@ namespace ProjetoSaude360.Pages.Cadastro
         }
 
         [BindProperty]
-        public Cadastro Cadastro { get; set; } = default!;
+        public Cadastro Cadastros { get; set; } = default!;
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Cadastros == null || Cadastro == null)
+          if (!ModelState.IsValid || _context.Cadastros == null || Cadastros == null)
             {
                 return Page();
             }
 
-            _context.Cadastros.Add(Cadastro);
+            _context.Cadastros.Add(Cadastros);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

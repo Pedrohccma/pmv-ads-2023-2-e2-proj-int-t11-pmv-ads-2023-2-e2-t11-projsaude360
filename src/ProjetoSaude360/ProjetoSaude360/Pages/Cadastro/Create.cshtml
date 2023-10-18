@@ -5,54 +5,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
 
-<h4>Cadastro</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Cadastro.NomeUsuario" class="control-label"></label>
-                <input asp-for="Cadastro.NomeUsuario" class="form-control" />
-                <span asp-validation-for="Cadastro.NomeUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cadastro.Generos" class="control-label"></label>
-                <select asp-for="Cadastro.Generos" class="form-control"></select>
-                <span asp-validation-for="Cadastro.Generos" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cadastro.DataNascimento" class="control-label"></label>
-                <input asp-for="Cadastro.DataNascimento" class="form-control" />
-                <span asp-validation-for="Cadastro.DataNascimento" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cadastro.Email" class="control-label"></label>
-                <input asp-for="Cadastro.Email" class="form-control" />
-                <span asp-validation-for="Cadastro.Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cadastro.Telefone" class="control-label"></label>
-                <input asp-for="Cadastro.Telefone" class="form-control" />
-                <span asp-validation-for="Cadastro.Telefone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cadastro.Senha" class="control-label"></label>
-                <input asp-for="Cadastro.Senha" class="form-control" />
-                <span asp-validation-for="Cadastro.Senha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-
-<div>
-    <a asp-page="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
