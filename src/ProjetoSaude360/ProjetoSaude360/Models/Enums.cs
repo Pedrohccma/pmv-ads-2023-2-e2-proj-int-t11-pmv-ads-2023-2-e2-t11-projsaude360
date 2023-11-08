@@ -1,4 +1,4 @@
-﻿namespace Saude360.Models
+﻿namespace ProjetoSaude360.Models
 {
     public class Enums
     {
@@ -7,6 +7,12 @@
             Masculino,
             Feminino,
             Outros
+        }
+
+        public enum Perfil
+        {
+            User,
+            Adm
         }
     }
 }

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\source\\repos\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e2-t11-projsaude360\\src\\Projeto_Saude_360\\src\\ProjetoSaude360\\ProjetoSaude360\\ProjetoSaude360.csproj": {}
+    "C:\\Users\\pedro\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e2-t11-projsaude360\\src\\Projeto_Saude_360\\src\\ProjetoSaude360\\ProjetoSaude360\\ProjetoSaude360.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\source\\repos\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e2-t11-projsaude360\\src\\Projeto_Saude_360\\src\\ProjetoSaude360\\ProjetoSaude360\\ProjetoSaude360.csproj": {
+    "C:\\Users\\pedro\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e2-t11-projsaude360\\src\\Projeto_Saude_360\\src\\ProjetoSaude360\\ProjetoSaude360\\ProjetoSaude360.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\source\\repos\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e2-t11-projsaude360\\src\\Projeto_Saude_360\\src\\ProjetoSaude360\\ProjetoSaude360\\ProjetoSaude360.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e2-t11-projsaude360\\src\\Projeto_Saude_360\\src\\ProjetoSaude360\\ProjetoSaude360\\ProjetoSaude360.csproj",
         "projectName": "ProjetoSaude360",
-        "projectPath": "C:\\Users\\pedro\\source\\repos\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e2-t11-projsaude360\\src\\Projeto_Saude_360\\src\\ProjetoSaude360\\ProjetoSaude360\\ProjetoSaude360.csproj",
+        "projectPath": "C:\\Users\\pedro\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e2-t11-projsaude360\\src\\Projeto_Saude_360\\src\\ProjetoSaude360\\ProjetoSaude360\\ProjetoSaude360.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\pedro\\source\\repos\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e2-t11-projsaude360\\src\\Projeto_Saude_360\\src\\ProjetoSaude360\\ProjetoSaude360\\obj\\",
         "projectStyle": "PackageReference",
@@ -44,6 +44,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
